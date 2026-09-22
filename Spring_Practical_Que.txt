@@ -1,0 +1,98 @@
+Practical 1: Introduction to JPA – Entity Class and Persisting a Single Entity
+Practical Definition
+Understand the requirements of a JPA entity, configure a relational datasource, and persist/retrieve an Employee using CrudRepository.
+
+
+Practical 2: Spring Data Repository Hierarchy – CrudRepository vs PagingAndSortingRepository vs JpaRepository
+Practical Definition
+Compare basic CRUD, paging/sorting, and JPA-specific batch operations by progressively using the Spring Data repository hierarchy.
+
+
+Practical 3: Custom Query Methods – findBy, countBy and @Query (JPQL)
+Practical Definition
+Use derived query methods and a named-parameter JPQL query for employee department and salary searches.
+
+
+Practical 4: One-to-One Mapping – Three Worked Examples
+Practical Definition
+Implement one-to-one relationships with @OneToOne, @JoinColumn, mappedBy and cascade; the assignment uses User–UserProfile, Employee–Passport and Country–Capital.
+
+
+Practical 5: One-to-Many / Many-to-One Mapping – Department and Employee
+Practical Definition
+Implement bidirectional Department→Employees and Employee→Department mapping, persist a parent with children, and support CRUD navigation.
+
+
+Practical 6: Many-to-Many Mapping – Student and Course
+Practical Definition
+Implement Student–Course Many-to-Many mapping with a join table and prevent recursive JSON serialization.
+
+
+Practical 7: Transaction Management with @Transactional – Bank Fund Transfer
+Practical Definition
+Ensure debit and credit operations are atomic and roll back together when a runtime exception occurs.
+
+
+Practical 8: Pagination and Sorting with Spring Data JPA
+Practical Definition
+Implement server-side pagination and sorting using Pageable/PageRequest and expose page, size and sortBy request parameters.
+
+
+Practical 9: Building a RESTful Microservice using @RestController and ResponseEntity
+Practical Definition
+Build CRUD REST endpoints using @RestController and ResponseEntity with explicit HTTP status handling.
+
+
+Practical 10: Layered Microservice Architecture – RestController + Service + JPA Repository
+Practical Definition
+Separate REST controller, business/service logic and persistence repository; the controller must not directly access the repository.
+
+
+Practical 11: Handling Request Data – @PathVariable, @RequestParam and @RequestBody
+Practical Definition
+Demonstrate the three main request-data styles in a REST controller and complete CRUD for Customer.
+
+
+Practical 12: DTO Pattern – Separating the Entity from the API Contract
+Practical Definition
+Decouple the persistent Employee entity from the REST API using a DTO and mapper, keeping the sensitive password field out of API responses.
+
+
+Practical 13: Request Validation using Bean Validation (@Valid) with RestController
+Practical Definition
+Validate incoming Customer data with @Valid and return HTTP 400 for invalid fields.
+
+
+Practical 14: Global Exception Handling using @ControllerAdvice and @ExceptionHandler
+Practical Definition
+Centralize 404, validation and generic errors in a consistent structured REST response.
+
+
+Practical 15: Securing REST API with HTTP Basic Authentication (Spring Security)
+Practical Definition
+Secure /api/secure/** with HTTP Basic authentication, keep /api/public/** open, and protect all CRUD verbs.
+
+
+Practical 16: User Registration and Login with BCrypt Password Encoding
+Practical Definition
+Store users in a database with BCrypt-hashed passwords and authenticate them through a custom UserDetailsService.
+
+
+Practical 17: Role-Based Access Control (RBAC) with Spring Security
+Practical Definition
+Restrict endpoints according to ADMIN and USER roles using method-level authorization.
+
+
+Practical 18: Securing REST API as an OAuth2 Resource Server with JWT
+Practical Definition
+Configure the application as an OAuth2 Resource Server that validates Bearer JWTs and protects REST endpoints.
+
+
+Practical 19: OAuth2 Login with a Third-Party Provider (Google/GitHub) and Accessing a Secured REST API
+Practical Definition
+Use Spring Security OAuth2 Client with a real provider and expose authenticated user details; use Postman's OAuth 2.0 support for API testing.
+
+
+Practical 20: Cross-Origin Resource Sharing (CORS) Configuration for Secured REST APIs
+Practical Definition
+Configure application-level CORS for /api/** and enable CORS handling in Spring Security.
